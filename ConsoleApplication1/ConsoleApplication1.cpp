@@ -6,6 +6,8 @@ struct Node
 	int noMhs;
 	string name;
 	Node* next;
+
+
 };
 
 Node* START = NULL;
@@ -22,7 +24,7 @@ void addNode() {
 	nodeBaru->name = nama;
 
 
-	if (START == NULL || nim <= START -> noMhs) {
+	if (START == NULL || nim <= START->noMhs) {
 		if (START != NULL && nim == start->noMhs)
 		{
 			cout << "Nim sudah ada" << endl;
@@ -36,9 +38,9 @@ void addNode() {
 	Node* previous = START;
 	Node* current = START;
 
-	while ((current != NULL) && (nim >= current->noMhs)) 
+	while ((current != NULL) && (nim >= current->noMhs))
 	{
-		if (nim == current->noMhs) 
+		if (nim == current->noMhs)
 		{
 			cout << "NIM sudah ada" << endl;
 			return;
@@ -49,3 +51,8 @@ void addNode() {
 
 	nodeBaru->next = current;
 	previous->next = nodeBaru;
+}
+
+bool searchNode(int nim, Node* current, Node* previous) {
+
+}
