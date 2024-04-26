@@ -27,8 +27,11 @@ void addNode() {
 		{
 			cout << "Nim sudah ada" << endl;
 			return;
-		
 		}
-
-	
+		Node* previous = START;
+		START = nodeBaru;
+		return;
 	}
+
+	Node* previous = START;
+	Node* current = START;
